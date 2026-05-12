@@ -26,7 +26,6 @@ role:        software engineer
 focus:       [ ai/ml, full-stack, systems ]
 currently:   shipping side projects at unreasonable hours
 learning:    whatever the next repo demands
-philosophy:  "make it work, make it right, make it fast — in that order"
 contact:     open an issue ¯\_(ツ)_/¯
 ```
 
@@ -41,9 +40,13 @@ contact:     open an issue ¯\_(ツ)_/¯
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+
+**Parallel & GPU Computing**
+<br/>
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![OpenMP](https://img.shields.io/badge/OpenMP-0071C5?style=for-the-badge&logo=c&logoColor=white)
+![MPI](https://img.shields.io/badge/MPI-FF6600?style=for-the-badge&logoColor=white)
 
 **Frameworks & Libraries**
 <br/>
@@ -61,7 +64,6 @@ contact:     open an issue ¯\_(ツ)_/¯
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 </div>
 
