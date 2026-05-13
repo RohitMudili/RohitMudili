@@ -21,7 +21,7 @@
 ### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> About
 
 ```yaml
-name:        Rohit Mudili
+name:        Rohit
 role:        software engineer
 focus:       [ ai/ml, full-stack, systems ]
 currently:   shipping side projects at unreasonable hours
