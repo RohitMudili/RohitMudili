@@ -1,4 +1,4 @@
-name: Refresh stats cache
+name: Refresh stats
 on:
   push:
     branches:
@@ -11,11 +11,29 @@ on:
 permissions:
   contents: write
 jobs:
-  bust-cache:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Bump cache-bust token in README
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('cache/requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+      - name: Install dependencies
+        run: pip install -r cache/requirements.txt
+      - name: Update LOC in README
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USER_NAME: ${{ github.repository_owner }}
+        run: python today.py
+      - name: Bust stats cache token
         run: |
           TS=$(date +%s)
           sed -i "s/cb=[A-Za-z0-9]*/cb=$TS/g" README.md
@@ -23,6 +41,6 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "github-actions[bot]"
-          git add README.md
-          git diff --cached --quiet || git commit -m "chore: bust stats cache"
+          git add README.md cache/
+          git diff --cached --quiet || git commit -m "chore: refresh LOC and stats cache"
           git push
