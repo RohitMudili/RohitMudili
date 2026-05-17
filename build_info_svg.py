@@ -39,7 +39,7 @@ rows = [
     [s('. '), k('Uptime'), s(':    '), ('pending', VALUE, 'UPTIME')],
     [s('. '), k('Role'), s(':'), v('      AI/ML Engineer')],
     [s('. '), k('Host'), s(':'), v('      Open Source Contributor')],
-    [s('. '), k('IDE'), s(':'), v('       VSCode, Claude Code')],
+    [s('. '), k('IDE'), s(':'), v('       VSCode 1.96.0')],
     [],
     [s('. '), k('Languages'), s('.'), k('Programming'), s(':')],
     [s('    '), v('Python, JavaScript, TypeScript, C++')],
