@@ -1,32 +1,45 @@
+<table>
+<tr>
+<td>
+
 <pre>
-<span style="color:#c9d1d9">#*+#%#+=+++=--+**=+=::.....:...--==::::=*#####%%@@@@@@@@%*+=</span>  <span style="color:#a5d6ff">rohit</span> <span style="color:#616e7f">----------------------------------------</span>
-<span style="color:#c9d1d9">+==*%#=-=++=--=*=--:.          ....:....-+-+*##%%@@@@@@@%#+=</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">OS</span><span style="color:#616e7f">:</span>        <span style="color:#a5d6ff">Windows 11</span>
-<span style="color:#c9d1d9">::-*%*=-:-=+++=-:..     ..::::::::..:::::..==#%%@@@@@@@@%#+=</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Uptime</span><span style="color:#616e7f">:</span>    <!-- UPTIME:START --><span style="color:#a5d6ff">21 years, 9 months, 22 days</span><!-- UPTIME:END -->
-<span style="color:#c9d1d9">--*%@%+-:.-+++-.   . ..-=++****####*****=..===*%@@@@@@@@@#*=</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Role</span><span style="color:#616e7f">:</span>      <span style="color:#a5d6ff">AI/ML Engineer</span>
-<span style="color:#c9d1d9">+#@@@@*=-:=+*+- ....:--=====++**###%%@@@@+..:-:+@@@@@@@@@%#+</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Host</span><span style="color:#616e7f">:</span>      <span style="color:#a5d6ff">Open Source Contributor</span>
-<span style="color:#c9d1d9">#%@@@%%#+====*: .. .---===+*####%%%@@@@@@@*. ::-%@@@@@@@@@%#</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">IDE</span><span style="color:#616e7f">:</span>       <span style="color:#a5d6ff">VSCode, Claude Code</span>
-<span style="color:#c9d1d9">%@@%%#*+====--: . .:--====+++**##**##%%@@@%+-. -@@@@@@@@@@@%</span>  
-<span style="color:#c9d1d9">%@@%#**+====--: .:---:::.....::---::..:-=*##*: =@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Languages</span>.<span style="color:#ffa657">Programming</span><span style="color:#616e7f">:</span>
-<span style="color:#c9d1d9">#%@%####+--==--..----:::......::-:.....::-=#%-.%%%@@@@@@@@@@</span>      <span style="color:#a5d6ff">Python, JavaScript, TypeScript, C++</span>
-<span style="color:#c9d1d9">#%%%###*=---==+:.=--:......  .:=#+..  .::.:+%=*@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Languages</span>.<span style="color:#ffa657">Computer</span><span style="color:#616e7f">:</span>
-<span style="color:#c9d1d9">#%###%#+--===+=::=---:::::::::=*@@*=---=+##%@#%%@@%%@@@@@@@@</span>      <span style="color:#a5d6ff">HTML, CSS, JSON, YAML, SQL</span>
-<span style="color:#c9d1d9">@@#*%@%+--===-:-:===+++**++==+++#%@%*+#%@@@@@%-=@@@%%@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Languages</span>.<span style="color:#ffa657">Real</span><span style="color:#616e7f">:</span>
-<span style="color:#c9d1d9">@@#+*%%*==+=--:::=-=---==-::--:--::=+.:=*%%%%%++@@@@@@@@@@@@</span>      <span style="color:#a5d6ff">English, Hindi, Telugu</span>
-<span style="color:#c9d1d9">@@@++###+++=---::=----:::..:. ..::-+*=..:-++*##%@@@@@@@@@@@@</span>  
-<span style="color:#c9d1d9">@@@*=*#****=:-=-.-----::  ..:::::-=--:. .:-=*#@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Hobbies</span>.<span style="color:#ffa657">Software</span><span style="color:#616e7f">:</span>
-<span style="color:#c9d1d9">@@@#++***#*=-=++=.::--::....-=+**#**=:...-==**@@@@@@@@@@@@@@</span>      <span style="color:#a5d6ff">OSS Contributing, AI Experiments</span>
-<span style="color:#c9d1d9">@@@@*+***#*=-=*#%-..::::::-----=+++*##+-:----*@@@@@@@@@@@@@@</span>  
-<span style="color:#c9d1d9">%%@@%****#*=--=*##. ....:::---:...:=+**=-::.+@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">- Contact ------------------------------------</span>
-<span style="color:#c9d1d9">%%%@%*####*+-=+*#%*.   ...::---==+###*=::. -@@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Email</span><span style="color:#616e7f">:</span>     <a href="mailto:rohitmudili5@gmail.com" style="color:#a5d6ff">rohitmudili5@gmail.com</a>
-<span style="color:#c9d1d9">%%@@#++*###+==*#%%@*..    ....::::----.. .+@@@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">LinkedIn</span><span style="color:#616e7f">:</span>  <a href="https://www.linkedin.com/in/rohit-mudili" style="color:#a5d6ff">linkedin.com/in/rohit-mudili</a>
-<span style="color:#c9d1d9">@@@@%*+++**+=-=+*%@#-:..               .-%@@@@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">GitHub</span><span style="color:#616e7f">:</span>    <a href="https://github.com/RohitMudili" style="color:#a5d6ff">github.com/RohitMudili</a>
-<span style="color:#c9d1d9">%%@@%*+==+**++***++=-::....      ..  .-*@@%@@@@@@@@@@@@@@@@@</span>  
-<span style="color:#c9d1d9">**#@@%******++*=...::::::...........:=*#%@#=%@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">- GitHub Stats -------------------------------</span>
-<span style="color:#c9d1d9">#*%@@@*+=-::..:. . ....:::.........:=+*#@@@*+##*##%@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Repos</span><span style="color:#616e7f">:</span>     <!-- REPOS:START --><span style="color:#a5d6ff">30</span><!-- REPOS:END --> <span style="color:#616e7f">{</span><span style="color:#ffa657">Contributed</span><span style="color:#616e7f">:</span> <!-- CONTRIB:START --><span style="color:#a5d6ff">47</span><!-- CONTRIB:END --><span style="color:#616e7f">}</span>
-<span style="color:#c9d1d9">+++*+=-:......... .   ...........::-+**##+=+*#*++++****###%%</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Stars</span><span style="color:#616e7f">:</span>     <!-- STARS:START --><span style="color:#a5d6ff">1</span><!-- STARS:END -->
-<span style="color:#c9d1d9">-=--:::...... ..    .        ..::::=++*+=+*++++++*********##</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Commits</span><span style="color:#616e7f">:</span>   <!-- COMMITS:START --><span style="color:#a5d6ff">362</span><!-- COMMITS:END -->
-<span style="color:#c9d1d9">:----::::::::.....      .. ........:::---+=-==+++*#**##*****</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Followers</span><span style="color:#616e7f">:</span> <!-- FOLLOWERS:START --><span style="color:#a5d6ff">7</span><!-- FOLLOWERS:END -->
-<span style="color:#c9d1d9">::::::::::::::.....        ..:::..  ..::-==-===+++#****#*#**</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Lines of Code on GitHub</span><span style="color:#616e7f">:</span>
-<span style="color:#c9d1d9">:::::...::.......... .  ..  ..:::::.....:-----=====+++***###</span>      <!-- LOC:START --><span style="color:#a5d6ff">906,397</span> (<span style="color:#3fb950">1,006,566++</span>, <span style="color:#f85149">100,169--</span>)<!-- LOC:END -->
-<span style="color:#c9d1d9">.:::::.....:...:......:..:..  ..:::::.:.:----------=+*+++*#*</span>  
+#*+#%#+=+++=--+**=+=::.....:...--==::::=*#####%%@@@@@@@@%*+=
++==*%#=-=++=--=*=--:.          ....:....-+-+*##%%@@@@@@@%#+=
+::-*%*=-:-=+++=-:..     ..::::::::..:::::..==#%%@@@@@@@@%#+=
+--*%@%+-:.-+++-.   . ..-=++****####*****=..===*%@@@@@@@@@#*=
++#@@@@*=-:=+*+- ....:--=====++**###%%@@@@+..:-:+@@@@@@@@@%#+
+#%@@@%%#+====*: .. .---===+*####%%%@@@@@@@*. ::-%@@@@@@@@@%#
+%@@%%#*+====--: . .:--====+++**##**##%%@@@%+-. -@@@@@@@@@@@%
+%@@%#**+====--: .:---:::.....::---::..:-=*##*: =@@@@@@@@@@@@
+#%@%####+--==--..----:::......::-:.....::-=#%-.%%%@@@@@@@@@@
+#%%%###*=---==+:.=--:......  .:=#+..  .::.:+%=*@@@@@@@@@@@@@
+#%###%#+--===+=::=---:::::::::=*@@*=---=+##%@#%%@@%%@@@@@@@@
+@@#*%@%+--===-:-:===+++**++==+++#%@%*+#%@@@@@%-=@@@%%@@@@@@@
+@@#+*%%*==+=--:::=-=---==-::--:--::=+.:=*%%%%%++@@@@@@@@@@@@
+@@@++###+++=---::=----:::..:. ..::-+*=..:-++*##%@@@@@@@@@@@@
+@@@*=*#****=:-=-.-----::  ..:::::-=--:. .:-=*#@@@@@@@@@@@@@@
+@@@#++***#*=-=++=.::--::....-=+**#**=:...-==**@@@@@@@@@@@@@@
+@@@@*+***#*=-=*#%-..::::::-----=+++*##+-:----*@@@@@@@@@@@@@@
+%%@@%****#*=--=*##. ....:::---:...:=+**=-::.+@@@@@@@@@@@@@@@
+%%%@%*####*+-=+*#%*.   ...::---==+###*=::. -@@@@@@@@@@@@@@@@
+%%@@#++*###+==*#%%@*..    ....::::----.. .+@@@@@@@@@@@@@@@@@
+@@@@%*+++**+=-=+*%@#-:..               .-%@@@@@@@@@@@@@@@@@@
+%%@@%*+==+**++***++=-::....      ..  .-*@@%@@@@@@@@@@@@@@@@@
+**#@@%******++*=...::::::...........:=*#%@#=%@@@@@@@@@@@@@@@
+#*%@@@*+=-::..:. . ....:::.........:=+*#@@@*+##*##%@@@@@@@@@
++++*+=-:......... .   ...........::-+**##+=+*#*++++****###%%
+-=--:::...... ..    .        ..::::=++*+=+*++++++*********##
+:----::::::::.....      .. ........:::---+=-==+++*#**##*****
+::::::::::::::.....        ..:::..  ..::-==-===+++#****#*#**
+:::::...::.......... .  ..  ..:::::.....:-----=====+++***###
+.:::::.....:...:......:..:..  ..:::::.:.:----------=+*+++*#*
 </pre>
+
+</td>
+<td valign="top">
+
+<img src="https://raw.githubusercontent.com/RohitMudili/RohitMudili/master/info.svg?cb=INITIAL" alt="info card" />
+
+</td>
+</tr>
+</table>

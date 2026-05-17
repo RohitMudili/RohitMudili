@@ -438,41 +438,39 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
     return funct_return
 
 
-VALUE_COLOR = '#a5d6ff'
-ADD_COLOR = '#3fb950'
-DEL_COLOR = '#f85149'
-
-
-def _span(text, color=VALUE_COLOR):
-    return f'<span style="color:{color}">{text}</span>'
-
-
-def update_readme(values):
-    """Replace <!-- KEY:START -->...<!-- KEY:END --> blocks with colored spans."""
+def update_info_svg(values):
+    """Update <tspan id="..."> text inside info.svg."""
     import re
-    with open('README.md', 'r', encoding='utf-8') as f:
+    with open('info.svg', 'r', encoding='utf-8') as f:
         content = f.read()
     new = content
     for key, raw in values.items():
         if key == 'LOC':
             total, added, deleted = raw
             inner = (
-                f'{_span(f"{total:,}", VALUE_COLOR)} '
-                f'({_span(f"{added:,}++", ADD_COLOR)}, '
-                f'{_span(f"{deleted:,}--", DEL_COLOR)})'
+                f'{total:,}</tspan> '
+                f'<tspan fill="#3fb950">{added:,}++</tspan>'
+                f'<tspan fill="#616e7f">, </tspan>'
+                f'<tspan fill="#f85149">{deleted:,}--</tspan>'
+                f'<tspan fill="#a5d6ff">'  # reopen so the closing </tspan> in svg matches
+            )
+            # match: <tspan ... id="LOC">PENDING</tspan>
+            new = re.sub(
+                rf'(<tspan [^>]*id="{key}"[^>]*>)[^<]*(</tspan>)',
+                lambda m: m.group(1) + inner + m.group(2),
+                new,
+                count=1,
             )
         else:
-            inner = _span(str(raw))
-        new = re.sub(
-            rf'<!-- {key}:START -->.*?<!-- {key}:END -->',
-            f'<!-- {key}:START -->{inner}<!-- {key}:END -->',
-            new,
-            count=1,
-            flags=re.DOTALL,
-        )
+            new = re.sub(
+                rf'(<tspan [^>]*id="{key}"[^>]*>)[^<]*(</tspan>)',
+                lambda m: m.group(1) + str(raw) + m.group(2),
+                new,
+                count=1,
+            )
     if new == content:
-        print('warning: no markers replaced')
-    with open('README.md', 'w', encoding='utf-8') as f:
+        print('warning: no IDs replaced')
+    with open('info.svg', 'w', encoding='utf-8') as f:
         f.write(new)
     for k in values:
         print(f'  {k} updated')
@@ -493,7 +491,7 @@ if __name__ == '__main__':
     contrib_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     follower_data, _ = perf_counter(follower_getter, USER_NAME)
 
-    update_readme({
+    update_info_svg({
         'UPTIME': age_data,
         'REPOS': f'{repo_data:,}',
         'CONTRIB': f'{contrib_data:,}',
