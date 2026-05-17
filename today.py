@@ -439,9 +439,9 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
 
 
 def update_info_svg(values):
-    """Update <tspan id="..."> text inside info.svg."""
+    """Update <tspan id="..."> text inside profile.svg."""
     import re
-    with open('info.svg', 'r', encoding='utf-8') as f:
+    with open('profile.svg', 'r', encoding='utf-8') as f:
         content = f.read()
     new = content
     for key, raw in values.items():
@@ -470,7 +470,7 @@ def update_info_svg(values):
             )
     if new == content:
         print('warning: no IDs replaced')
-    with open('info.svg', 'w', encoding='utf-8') as f:
+    with open('profile.svg', 'w', encoding='utf-8') as f:
         f.write(new)
     for k in values:
         print(f'  {k} updated')

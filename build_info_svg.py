@@ -1,20 +1,31 @@
-"""Generate info.svg with the colored neofetch-style info card.
+"""Generate profile.svg: ASCII portrait on the left + colored neofetch info on the right.
 
-Run this whenever the static info content (labels, hobbies, etc.) changes.
-today.py updates the dynamic stat values inside this SVG at workflow time.
+Run when static content changes. today.py updates dynamic stat values in-place.
 """
 
-WIDTH = 660
-LINE_H = 22
-START_Y = 26
-LEFT_PAD = 18
-FONT_SIZE = 17
+ASCII_FILE = 'ascii_dark.txt'
+OUTPUT = 'profile.svg'
+
+# Left column (ASCII)
+ASCII_X = 18
+ASCII_Y = 28
+ASCII_LINE_H = 18
+ASCII_FONT_SIZE = 14
+ASCII_COLOR = '#c9d1d9'
+
+# Right column (info)
+INFO_X = 580
+INFO_Y = 30
+INFO_LINE_H = 22
+INFO_FONT_SIZE = 17
 
 KEY = '#ffa657'
 VALUE = '#a5d6ff'
 CC = '#616e7f'
 FG = '#c9d1d9'
 BG = '#161b22'
+
+WIDTH = 1180
 
 
 def k(text): return (text, KEY)
@@ -59,19 +70,35 @@ rows = [
 
 
 def main():
-    height = START_Y + LINE_H * len(rows) + 10
+    ascii_lines = open(ASCII_FILE, encoding='utf-8').read().splitlines()
+    ascii_height = ASCII_Y + ASCII_LINE_H * len(ascii_lines)
+    info_height = INFO_Y + INFO_LINE_H * len(rows)
+    height = max(ascii_height, info_height) + 16
+
     svg = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" '
-        f'font-family="Consolas, ui-monospace, monospace" font-size="{FONT_SIZE}px">',
+        f'font-family="Consolas, ui-monospace, monospace">',
         f'<rect width="{WIDTH}" height="{height}" fill="{BG}" rx="10"/>',
     ]
-    y = START_Y
+
+    # ASCII portrait (left)
+    svg.append(f'<g font-size="{ASCII_FONT_SIZE}px" fill="{ASCII_COLOR}">')
+    for i, line in enumerate(ascii_lines):
+        # XML-escape the line (only & < > matter, none in our ramp)
+        escaped = line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        y = ASCII_Y + i * ASCII_LINE_H
+        svg.append(f'<text x="{ASCII_X}" y="{y}" xml:space="preserve">{escaped}</text>')
+    svg.append('</g>')
+
+    # Info card (right)
+    svg.append(f'<g font-size="{INFO_FONT_SIZE}px" fill="{FG}">')
+    y = INFO_Y
     for row in rows:
         if not row:
-            y += LINE_H
+            y += INFO_LINE_H
             continue
-        parts = [f'<text x="{LEFT_PAD}" y="{y}" fill="{FG}">']
+        parts = [f'<text x="{INFO_X}" y="{y}" xml:space="preserve">']
         for span in row:
             if len(span) == 3:
                 text, color, _id = span
@@ -81,11 +108,13 @@ def main():
                 parts.append(f'<tspan fill="{color}">{text}</tspan>')
         parts.append('</text>')
         svg.append(''.join(parts))
-        y += LINE_H
+        y += INFO_LINE_H
+    svg.append('</g>')
+
     svg.append('</svg>')
-    with open('info.svg', 'w', encoding='utf-8') as f:
+    with open(OUTPUT, 'w', encoding='utf-8') as f:
         f.write('\n'.join(svg))
-    print(f'info.svg written: {WIDTH}x{height}, {FONT_SIZE}px')
+    print(f'{OUTPUT} written: {WIDTH}x{height}')
 
 
 if __name__ == '__main__':
