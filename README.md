@@ -38,7 +38,7 @@
 </td>
 <td valign="top">
 
-<img src="https://raw.githubusercontent.com/RohitMudili/RohitMudili/master/info.svg?cb=1779042558" alt="info card" />
+<img src="https://raw.githubusercontent.com/RohitMudili/RohitMudili/master/info.svg?cb=1779042767" alt="info card" />
 
 </td>
 </tr>
