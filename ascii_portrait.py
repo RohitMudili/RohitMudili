@@ -7,7 +7,7 @@ left column.
 from PIL import Image, ImageOps, ImageEnhance, ImageFilter
 
 SRC = 'Screenshot 2026-05-17 225820.png'
-COLS = 44
+COLS = 40
 ROWS = 25
 CHAR_ASPECT = 2.0  # consolas chars are ~2x taller than wide
 # Face crop as fractions of source dimensions (tuned for this screenshot).
