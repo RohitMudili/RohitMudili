@@ -69,8 +69,8 @@ rohit ----------------------------------------
 
 <!-- stats-cache-bust -->
 <a href="https://github.com/RohitMudili">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=RohitMudili&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&icon_color=00f5ff&title_color=ff00aa&text_color=ffffff&include_all_commits=true&count_private=true&cb=INITIAL" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RohitMudili&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=ff00aa&text_color=ffffff&langs_count=8&cb=INITIAL" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=RohitMudili&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&icon_color=00f5ff&title_color=ff00aa&text_color=ffffff&include_all_commits=true&count_private=true&cb=1779041404" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RohitMudili&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=ff00aa&text_color=ffffff&langs_count=8&cb=1779041404" />
 </a>
 
 ### Connect
