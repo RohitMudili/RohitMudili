@@ -3,7 +3,7 @@
 <rect width="580" height="670" fill="#161b22" rx="10"/>
 <text x="14" y="24" fill="#c9d1d9"><tspan fill="#a5d6ff">rohit</tspan><tspan fill="#616e7f"> ----------------------------------------</tspan></text>
 <text x="14" y="46" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">OS</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">        Windows 11</tspan></text>
-<text x="14" y="68" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Uptime</tspan><tspan fill="#616e7f">:    </tspan><tspan fill="#a5d6ff" id="UPTIME">pending</tspan></text>
+<text x="14" y="68" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Uptime</tspan><tspan fill="#616e7f">:    </tspan><tspan fill="#a5d6ff" id="UPTIME">21 years, 9 months, 22 days</tspan></text>
 <text x="14" y="90" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Role</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">      AI/ML Engineer</tspan></text>
 <text x="14" y="112" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Host</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">      Open Source Contributor</tspan></text>
 <text x="14" y="134" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">IDE</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">       VSCode, Claude Code</tspan></text>
@@ -20,10 +20,10 @@
 <text x="14" y="442" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">LinkedIn</tspan><tspan fill="#616e7f">:  </tspan><tspan fill="#a5d6ff" id="LINKEDIN_LINK">linkedin.com/in/rohit-mudili</tspan></text>
 <text x="14" y="464" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">GitHub</tspan><tspan fill="#616e7f">:    </tspan><tspan fill="#a5d6ff" id="GITHUB_LINK">github.com/RohitMudili</tspan></text>
 <text x="14" y="508" fill="#c9d1d9"><tspan fill="#616e7f">- GitHub Stats -------------------------------</tspan></text>
-<text x="14" y="530" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Repos</tspan><tspan fill="#616e7f">:     </tspan><tspan fill="#a5d6ff" id="REPOS">0</tspan><tspan fill="#616e7f"> {</tspan><tspan fill="#ffa657">Contributed</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff" id="CONTRIB">0</tspan><tspan fill="#616e7f">}</tspan></text>
-<text x="14" y="552" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Stars</tspan><tspan fill="#616e7f">:     </tspan><tspan fill="#a5d6ff" id="STARS">0</tspan></text>
-<text x="14" y="574" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Commits</tspan><tspan fill="#616e7f">:   </tspan><tspan fill="#a5d6ff" id="COMMITS">0</tspan></text>
-<text x="14" y="596" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Followers</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff" id="FOLLOWERS">0</tspan></text>
+<text x="14" y="530" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Repos</tspan><tspan fill="#616e7f">:     </tspan><tspan fill="#a5d6ff" id="REPOS">30</tspan><tspan fill="#616e7f"> {</tspan><tspan fill="#ffa657">Contributed</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff" id="CONTRIB">47</tspan><tspan fill="#616e7f">}</tspan></text>
+<text x="14" y="552" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Stars</tspan><tspan fill="#616e7f">:     </tspan><tspan fill="#a5d6ff" id="STARS">1</tspan></text>
+<text x="14" y="574" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Commits</tspan><tspan fill="#616e7f">:   </tspan><tspan fill="#a5d6ff" id="COMMITS">363</tspan></text>
+<text x="14" y="596" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Followers</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff" id="FOLLOWERS">7</tspan></text>
 <text x="14" y="618" fill="#c9d1d9"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Lines of Code on GitHub</tspan><tspan fill="#616e7f">:</tspan></text>
-<text x="14" y="640" fill="#c9d1d9"><tspan fill="#616e7f">    </tspan><tspan fill="#a5d6ff" id="LOC">pending</tspan></text>
+<text x="14" y="640" fill="#c9d1d9"><tspan fill="#616e7f">    </tspan><tspan fill="#a5d6ff" id="LOC">906,441</tspan> <tspan fill="#3fb950">1,006,668++</tspan><tspan fill="#616e7f">, </tspan><tspan fill="#f85149">100,227--</tspan><tspan fill="#a5d6ff"></tspan></text>
 </svg>
