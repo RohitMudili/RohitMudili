@@ -15,7 +15,7 @@ ASCII_COLOR = '#c9d1d9'
 
 # Right column (info)
 INFO_X = 660
-INFO_Y = 30
+INFO_Y = 80
 INFO_LINE_H = 22
 INFO_FONT_SIZE = 17
 
