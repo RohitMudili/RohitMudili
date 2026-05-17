@@ -1,0 +1,28 @@
+name: Refresh stats cache
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bust-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump cache-bust token in README
+        run: |
+          TS=$(date +%s)
+          sed -i "s/cb=[A-Za-z0-9]*/cb=$TS/g" README.md
+      - name: Commit if changed
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: bust stats cache"
+          git push

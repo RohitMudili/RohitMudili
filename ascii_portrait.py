@@ -12,7 +12,7 @@ ROWS = 30
 CHAR_ASPECT = 2.0  # consolas chars are ~2x taller than wide
 # Face crop as fractions of source dimensions (tuned for this screenshot).
 # Image looks roughly: shoulders bottom, hair top, face roughly centered horizontally.
-FACE_BOX = (0.30, 0.05, 0.70, 0.60)  # (left, top, right, bottom) fractions
+FACE_BOX = (0.28, 0.00, 0.72, 0.62)  # (left, top, right, bottom) fractions
 
 RAMP = '@%#*+=-:. '
 
