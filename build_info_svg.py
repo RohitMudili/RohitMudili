@@ -7,14 +7,14 @@ ASCII_FILE = 'ascii_dark.txt'
 OUTPUT = 'profile.svg'
 
 # Left column (ASCII)
-ASCII_X = 18
-ASCII_Y = 28
-ASCII_LINE_H = 18
-ASCII_FONT_SIZE = 14
+ASCII_X = 50
+ASCII_Y = 80
+ASCII_LINE_H = 22
+ASCII_FONT_SIZE = 17
 ASCII_COLOR = '#c9d1d9'
 
 # Right column (info)
-INFO_X = 580
+INFO_X = 660
 INFO_Y = 30
 INFO_LINE_H = 22
 INFO_FONT_SIZE = 17
@@ -25,7 +25,7 @@ CC = '#616e7f'
 FG = '#c9d1d9'
 BG = '#161b22'
 
-WIDTH = 1180
+WIDTH = 1260
 
 
 def k(text): return (text, KEY)
