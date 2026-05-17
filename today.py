@@ -438,16 +438,34 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
     return funct_return
 
 
+VALUE_COLOR = '#a5d6ff'
+ADD_COLOR = '#3fb950'
+DEL_COLOR = '#f85149'
+
+
+def _span(text, color=VALUE_COLOR):
+    return f'<span style="color:{color}">{text}</span>'
+
+
 def update_readme(values):
-    """Replace <!-- KEY:START -->...<!-- KEY:END --> blocks with values."""
+    """Replace <!-- KEY:START -->...<!-- KEY:END --> blocks with colored spans."""
     import re
     with open('README.md', 'r', encoding='utf-8') as f:
         content = f.read()
     new = content
-    for key, val in values.items():
+    for key, raw in values.items():
+        if key == 'LOC':
+            total, added, deleted = raw
+            inner = (
+                f'{_span(f"{total:,}", VALUE_COLOR)} '
+                f'({_span(f"{added:,}++", ADD_COLOR)}, '
+                f'{_span(f"{deleted:,}--", DEL_COLOR)})'
+            )
+        else:
+            inner = _span(str(raw))
         new = re.sub(
             rf'<!-- {key}:START -->.*?<!-- {key}:END -->',
-            f'<!-- {key}:START -->{val}<!-- {key}:END -->',
+            f'<!-- {key}:START -->{inner}<!-- {key}:END -->',
             new,
             count=1,
             flags=re.DOTALL,
@@ -456,8 +474,8 @@ def update_readme(values):
         print('warning: no markers replaced')
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(new)
-    for k, v in values.items():
-        print(f'  {k} = {v}')
+    for k in values:
+        print(f'  {k} updated')
 
 
 if __name__ == '__main__':
@@ -482,6 +500,6 @@ if __name__ == '__main__':
         'STARS': f'{star_data:,}',
         'COMMITS': f'{commit_data:,}',
         'FOLLOWERS': f'{follower_data:,}',
-        'LOC': f'{total_loc[2]:,} ({total_loc[0]:,}++, {total_loc[1]:,}--)',
+        'LOC': (total_loc[2], total_loc[0], total_loc[1]),
     })
     print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))

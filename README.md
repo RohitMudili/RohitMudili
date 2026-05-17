@@ -1,32 +1,32 @@
 <pre>
-#*+#%#+=+++=--+**=+=::.....:...--==::::=*#####%%@@@@@@@@%*+=  rohit ----------------------------------------
-+==*%#=-=++=--=*=--:.          ....:....-+-+*##%%@@@@@@@%#+=  . OS:        Windows 11
-::-*%*=-:-=+++=-:..     ..::::::::..:::::..==#%%@@@@@@@@%#+=  . Uptime:    <!-- UPTIME:START -->21 years, 9 months, 22 days<!-- UPTIME:END -->
---*%@%+-:.-+++-.   . ..-=++****####*****=..===*%@@@@@@@@@#*=  . Role:      AI/ML Engineer
-+#@@@@*=-:=+*+- ....:--=====++**###%%@@@@+..:-:+@@@@@@@@@%#+  . Host:      Open Source Contributor
-#%@@@%%#+====*: .. .---===+*####%%%@@@@@@@*. ::-%@@@@@@@@@%#  . IDE:       VSCode, Claude Code
-%@@%%#*+====--: . .:--====+++**##**##%%@@@%+-. -@@@@@@@@@@@%  
-%@@%#**+====--: .:---:::.....::---::..:-=*##*: =@@@@@@@@@@@@  . Languages.Programming:
-#%@%####+--==--..----:::......::-:.....::-=#%-.%%%@@@@@@@@@@      Python, JavaScript, TypeScript, C++
-#%%%###*=---==+:.=--:......  .:=#+..  .::.:+%=*@@@@@@@@@@@@@  . Languages.Computer:
-#%###%#+--===+=::=---:::::::::=*@@*=---=+##%@#%%@@%%@@@@@@@@      HTML, CSS, JSON, YAML, SQL
-@@#*%@%+--===-:-:===+++**++==+++#%@%*+#%@@@@@%-=@@@%%@@@@@@@  . Languages.Real:
-@@#+*%%*==+=--:::=-=---==-::--:--::=+.:=*%%%%%++@@@@@@@@@@@@      English, Hindi, Telugu
-@@@++###+++=---::=----:::..:. ..::-+*=..:-++*##%@@@@@@@@@@@@  
-@@@*=*#****=:-=-.-----::  ..:::::-=--:. .:-=*#@@@@@@@@@@@@@@  . Hobbies.Software:
-@@@#++***#*=-=++=.::--::....-=+**#**=:...-==**@@@@@@@@@@@@@@      OSS Contributing, AI Experiments
-@@@@*+***#*=-=*#%-..::::::-----=+++*##+-:----*@@@@@@@@@@@@@@  
-%%@@%****#*=--=*##. ....:::---:...:=+**=-::.+@@@@@@@@@@@@@@@  - Contact ------------------------------------
-%%%@%*####*+-=+*#%*.   ...::---==+###*=::. -@@@@@@@@@@@@@@@@  . Email:     <a href="mailto:rohitmudili5@gmail.com">rohitmudili5@gmail.com</a>
-%%@@#++*###+==*#%%@*..    ....::::----.. .+@@@@@@@@@@@@@@@@@  . LinkedIn:  <a href="https://www.linkedin.com/in/rohit-mudili">linkedin.com/in/rohit-mudili</a>
-@@@@%*+++**+=-=+*%@#-:..               .-%@@@@@@@@@@@@@@@@@@  . GitHub:    <a href="https://github.com/RohitMudili">github.com/RohitMudili</a>
-%%@@%*+==+**++***++=-::....      ..  .-*@@%@@@@@@@@@@@@@@@@@  
-**#@@%******++*=...::::::...........:=*#%@#=%@@@@@@@@@@@@@@@  - GitHub Stats -------------------------------
-#*%@@@*+=-::..:. . ....:::.........:=+*#@@@*+##*##%@@@@@@@@@  . Repos:     <!-- REPOS:START -->30<!-- REPOS:END --> {Contributed: <!-- CONTRIB:START -->47<!-- CONTRIB:END -->}
-+++*+=-:......... .   ...........::-+**##+=+*#*++++****###%%  . Stars:     <!-- STARS:START -->1<!-- STARS:END -->
--=--:::...... ..    .        ..::::=++*+=+*++++++*********##  . Commits:   <!-- COMMITS:START -->361<!-- COMMITS:END -->
-:----::::::::.....      .. ........:::---+=-==+++*#**##*****  . Followers: <!-- FOLLOWERS:START -->7<!-- FOLLOWERS:END -->
-::::::::::::::.....        ..:::..  ..::-==-===+++#****#*#**  . Lines of Code on GitHub:
-:::::...::.......... .  ..  ..:::::.....:-----=====+++***###      <!-- LOC:START -->906,379 (1,006,512++, 100,133--)<!-- LOC:END -->
-.:::::.....:...:......:..:..  ..:::::.:.:----------=+*+++*#*  
+<span style="color:#c9d1d9">#*+#%#+=+++=--+**=+=::.....:...--==::::=*#####%%@@@@@@@@%*+=</span>  <span style="color:#a5d6ff">rohit</span> <span style="color:#616e7f">----------------------------------------</span>
+<span style="color:#c9d1d9">+==*%#=-=++=--=*=--:.          ....:....-+-+*##%%@@@@@@@%#+=</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">OS</span><span style="color:#616e7f">:</span>        <span style="color:#a5d6ff">Windows 11</span>
+<span style="color:#c9d1d9">::-*%*=-:-=+++=-:..     ..::::::::..:::::..==#%%@@@@@@@@%#+=</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Uptime</span><span style="color:#616e7f">:</span>    <!-- UPTIME:START --><span style="color:#a5d6ff">pending</span><!-- UPTIME:END -->
+<span style="color:#c9d1d9">--*%@%+-:.-+++-.   . ..-=++****####*****=..===*%@@@@@@@@@#*=</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Role</span><span style="color:#616e7f">:</span>      <span style="color:#a5d6ff">AI/ML Engineer</span>
+<span style="color:#c9d1d9">+#@@@@*=-:=+*+- ....:--=====++**###%%@@@@+..:-:+@@@@@@@@@%#+</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Host</span><span style="color:#616e7f">:</span>      <span style="color:#a5d6ff">Open Source Contributor</span>
+<span style="color:#c9d1d9">#%@@@%%#+====*: .. .---===+*####%%%@@@@@@@*. ::-%@@@@@@@@@%#</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">IDE</span><span style="color:#616e7f">:</span>       <span style="color:#a5d6ff">VSCode, Claude Code</span>
+<span style="color:#c9d1d9">%@@%%#*+====--: . .:--====+++**##**##%%@@@%+-. -@@@@@@@@@@@%</span>  
+<span style="color:#c9d1d9">%@@%#**+====--: .:---:::.....::---::..:-=*##*: =@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Languages</span>.<span style="color:#ffa657">Programming</span><span style="color:#616e7f">:</span>
+<span style="color:#c9d1d9">#%@%####+--==--..----:::......::-:.....::-=#%-.%%%@@@@@@@@@@</span>      <span style="color:#a5d6ff">Python, JavaScript, TypeScript, C++</span>
+<span style="color:#c9d1d9">#%%%###*=---==+:.=--:......  .:=#+..  .::.:+%=*@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Languages</span>.<span style="color:#ffa657">Computer</span><span style="color:#616e7f">:</span>
+<span style="color:#c9d1d9">#%###%#+--===+=::=---:::::::::=*@@*=---=+##%@#%%@@%%@@@@@@@@</span>      <span style="color:#a5d6ff">HTML, CSS, JSON, YAML, SQL</span>
+<span style="color:#c9d1d9">@@#*%@%+--===-:-:===+++**++==+++#%@%*+#%@@@@@%-=@@@%%@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Languages</span>.<span style="color:#ffa657">Real</span><span style="color:#616e7f">:</span>
+<span style="color:#c9d1d9">@@#+*%%*==+=--:::=-=---==-::--:--::=+.:=*%%%%%++@@@@@@@@@@@@</span>      <span style="color:#a5d6ff">English, Hindi, Telugu</span>
+<span style="color:#c9d1d9">@@@++###+++=---::=----:::..:. ..::-+*=..:-++*##%@@@@@@@@@@@@</span>  
+<span style="color:#c9d1d9">@@@*=*#****=:-=-.-----::  ..:::::-=--:. .:-=*#@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Hobbies</span>.<span style="color:#ffa657">Software</span><span style="color:#616e7f">:</span>
+<span style="color:#c9d1d9">@@@#++***#*=-=++=.::--::....-=+**#**=:...-==**@@@@@@@@@@@@@@</span>      <span style="color:#a5d6ff">OSS Contributing, AI Experiments</span>
+<span style="color:#c9d1d9">@@@@*+***#*=-=*#%-..::::::-----=+++*##+-:----*@@@@@@@@@@@@@@</span>  
+<span style="color:#c9d1d9">%%@@%****#*=--=*##. ....:::---:...:=+**=-::.+@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">- Contact ------------------------------------</span>
+<span style="color:#c9d1d9">%%%@%*####*+-=+*#%*.   ...::---==+###*=::. -@@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Email</span><span style="color:#616e7f">:</span>     <a href="mailto:rohitmudili5@gmail.com" style="color:#a5d6ff">rohitmudili5@gmail.com</a>
+<span style="color:#c9d1d9">%%@@#++*###+==*#%%@*..    ....::::----.. .+@@@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">LinkedIn</span><span style="color:#616e7f">:</span>  <a href="https://www.linkedin.com/in/rohit-mudili" style="color:#a5d6ff">linkedin.com/in/rohit-mudili</a>
+<span style="color:#c9d1d9">@@@@%*+++**+=-=+*%@#-:..               .-%@@@@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">GitHub</span><span style="color:#616e7f">:</span>    <a href="https://github.com/RohitMudili" style="color:#a5d6ff">github.com/RohitMudili</a>
+<span style="color:#c9d1d9">%%@@%*+==+**++***++=-::....      ..  .-*@@%@@@@@@@@@@@@@@@@@</span>  
+<span style="color:#c9d1d9">**#@@%******++*=...::::::...........:=*#%@#=%@@@@@@@@@@@@@@@</span>  <span style="color:#616e7f">- GitHub Stats -------------------------------</span>
+<span style="color:#c9d1d9">#*%@@@*+=-::..:. . ....:::.........:=+*#@@@*+##*##%@@@@@@@@@</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Repos</span><span style="color:#616e7f">:</span>     <!-- REPOS:START --><span style="color:#a5d6ff">0</span><!-- REPOS:END --> <span style="color:#616e7f">{</span><span style="color:#ffa657">Contributed</span><span style="color:#616e7f">:</span> <!-- CONTRIB:START --><span style="color:#a5d6ff">0</span><!-- CONTRIB:END --><span style="color:#616e7f">}</span>
+<span style="color:#c9d1d9">+++*+=-:......... .   ...........::-+**##+=+*#*++++****###%%</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Stars</span><span style="color:#616e7f">:</span>     <!-- STARS:START --><span style="color:#a5d6ff">0</span><!-- STARS:END -->
+<span style="color:#c9d1d9">-=--:::...... ..    .        ..::::=++*+=+*++++++*********##</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Commits</span><span style="color:#616e7f">:</span>   <!-- COMMITS:START --><span style="color:#a5d6ff">0</span><!-- COMMITS:END -->
+<span style="color:#c9d1d9">:----::::::::.....      .. ........:::---+=-==+++*#**##*****</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Followers</span><span style="color:#616e7f">:</span> <!-- FOLLOWERS:START --><span style="color:#a5d6ff">0</span><!-- FOLLOWERS:END -->
+<span style="color:#c9d1d9">::::::::::::::.....        ..:::..  ..::-==-===+++#****#*#**</span>  <span style="color:#616e7f">.</span> <span style="color:#ffa657">Lines of Code on GitHub</span><span style="color:#616e7f">:</span>
+<span style="color:#c9d1d9">:::::...::.......... .  ..  ..:::::.....:-----=====+++***###</span>      <!-- LOC:START --><span style="color:#a5d6ff">pending</span><!-- LOC:END -->
+<span style="color:#c9d1d9">.:::::.....:...:......:..:..  ..:::::.:.:----------=+*+++*#*</span>  
 </pre>
