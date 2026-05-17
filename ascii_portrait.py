@@ -1,28 +1,33 @@
-"""Convert a portrait photo into ASCII art sized for the profile SVG.
+"""Convert a portrait photo to ASCII art for the profile SVG.
 
-Outputs two text files: ascii_dark.txt (chars dense on light pixels, for dark bg)
-and ascii_light.txt (chars dense on dark pixels, for light bg).
-Both are 44 cols x 25 rows to fit the left column of dark_mode.svg / light_mode.svg.
+Crops to a face-centered square, enhances contrast and edges, then samples
+brightness through a 10-level ramp into a 44x25 grid that fits the SVG's
+left column.
 """
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageEnhance, ImageFilter
 
-SRC = '9bde6f21-fa60-4d29-ad4a-400c05f0be75.jpg'
+SRC = 'Screenshot 2026-05-17 225820.png'
 COLS = 44
 ROWS = 25
 CHAR_ASPECT = 2.0  # consolas chars are ~2x taller than wide
+# Face crop as fractions of source dimensions (tuned for this screenshot).
+# Image looks roughly: shoulders bottom, hair top, face roughly centered horizontally.
+FACE_BOX = (0.30, 0.05, 0.70, 0.60)  # (left, top, right, bottom) fractions
 
-# Ramp from darkest visual weight to lightest (10 levels).
-# Index 0 = most ink, index -1 = blank.
 RAMP = '@%#*+=-:. '
 
 
-def to_ascii(invert: bool) -> str:
-    img = Image.open(SRC).convert('L')
-    img = ImageOps.autocontrast(img, cutoff=2)
+def prep(img: Image.Image) -> Image.Image:
     w, h = img.size
-    # We want COLS columns and ROWS rows after correcting for char aspect.
-    # Sample a region matching target aspect ratio, centered on face.
-    target_ratio = (COLS) / (ROWS * CHAR_ASPECT)
+    l, t, r, b = FACE_BOX
+    img = img.crop((int(l * w), int(t * h), int(r * w), int(b * h)))
+    img = img.convert('L')
+    img = ImageOps.autocontrast(img, cutoff=3)
+    img = ImageEnhance.Contrast(img).enhance(1.25)
+    img = img.filter(ImageFilter.SHARPEN)
+    # Match target aspect ratio (COLS / (ROWS * CHAR_ASPECT))
+    target_ratio = COLS / (ROWS * CHAR_ASPECT)
+    w, h = img.size
     src_ratio = w / h
     if src_ratio > target_ratio:
         new_w = int(h * target_ratio)
@@ -32,19 +37,18 @@ def to_ascii(invert: bool) -> str:
         new_h = int(w / target_ratio)
         top = (h - new_h) // 2
         img = img.crop((0, top, w, top + new_h))
-    img = img.resize((COLS, ROWS), Image.LANCZOS)
+    return img.resize((COLS, ROWS), Image.LANCZOS)
 
+
+def to_ascii(invert: bool) -> str:
+    img = prep(Image.open(SRC))
     lines = []
     for y in range(ROWS):
         row = []
         for x in range(COLS):
-            v = img.getpixel((x, y))  # 0=black, 255=white
-            if invert:
-                # light background: dark pixels (low v) should be dense chars
-                idx = int((v / 255) * (len(RAMP) - 1))
-            else:
-                # dark background: light pixels (high v) should be dense chars
-                idx = int(((255 - v) / 255) * (len(RAMP) - 1))
+            v = img.getpixel((x, y))
+            scaled = v if invert else 255 - v
+            idx = int((scaled / 255) * (len(RAMP) - 1))
             row.append(RAMP[idx])
         lines.append(''.join(row))
     return '\n'.join(lines)
@@ -57,8 +61,8 @@ if __name__ == '__main__':
         f.write(dark)
     with open('ascii_light.txt', 'w', encoding='utf-8') as f:
         f.write(light)
-    print('=== DARK MODE (chars are highlights on dark bg) ===')
+    print('=== DARK MODE ===')
     print(dark)
     print()
-    print('=== LIGHT MODE (chars are shadows on light bg) ===')
+    print('=== LIGHT MODE ===')
     print(light)
