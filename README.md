@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/RohitMudili">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Rohit%20Mudili&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=building%20things%20that%20think&descAlignY=60&descAlign=50" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Rohit&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=building%20things%20that%20think&descAlignY=60&descAlign=50" />
 </a>
 
 <a href="https://github.com/RohitMudili">
