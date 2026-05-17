@@ -438,31 +438,26 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
     return funct_return
 
 
-def update_readme(loc_total, loc_add, loc_del):
-    """Replace LOC marker in README.md with computed numbers."""
+def update_readme(values):
+    """Replace <!-- KEY:START -->...<!-- KEY:END --> blocks with values."""
     import re
     with open('README.md', 'r', encoding='utf-8') as f:
         content = f.read()
-    replacement = (
-        f'<!-- LOC:START -->\n'
-        f'**Lines of Code on GitHub:** `{loc_total:,}` '
-        f'(<span style="color:#3fb950">{loc_add:,}++</span>, '
-        f'<span style="color:#f85149">{loc_del:,}--</span>)\n'
-        f'<!-- LOC:END -->'
-    )
-    new = re.sub(
-        r'<!-- LOC:START -->.*?<!-- LOC:END -->',
-        replacement,
-        content,
-        count=1,
-        flags=re.DOTALL,
-    )
+    new = content
+    for key, val in values.items():
+        new = re.sub(
+            rf'<!-- {key}:START -->.*?<!-- {key}:END -->',
+            f'<!-- {key}:START -->{val}<!-- {key}:END -->',
+            new,
+            count=1,
+            flags=re.DOTALL,
+        )
     if new == content:
-        print('warning: LOC markers not found in README.md')
-        return
+        print('warning: no markers replaced')
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(new)
-    print(f'README updated: {loc_total:,} LOC ({loc_add:,}++, {loc_del:,}--)')
+    for k, v in values.items():
+        print(f'  {k} = {v}')
 
 
 if __name__ == '__main__':
@@ -470,8 +465,23 @@ if __name__ == '__main__':
     user_data, user_time = perf_counter(user_getter, USER_NAME)
     OWNER_ID, acc_date = user_data
     formatter('account data', user_time)
+    age_data, age_time = perf_counter(daily_readme, datetime.datetime(2004, 7, 25))
+    formatter('age calculation', age_time)
     total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
-    # total_loc = [added, deleted, total, cached_flag]
-    update_readme(total_loc[2], total_loc[0], total_loc[1])
+    commit_data, _ = perf_counter(commit_counter, 7)
+    star_data, _ = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
+    repo_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
+    contrib_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+    follower_data, _ = perf_counter(follower_getter, USER_NAME)
+
+    update_readme({
+        'UPTIME': age_data,
+        'REPOS': f'{repo_data:,}',
+        'CONTRIB': f'{contrib_data:,}',
+        'STARS': f'{star_data:,}',
+        'COMMITS': f'{commit_data:,}',
+        'FOLLOWERS': f'{follower_data:,}',
+        'LOC': f'{total_loc[2]:,} ({total_loc[0]:,}++, {total_loc[1]:,}--)',
+    })
     print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))
