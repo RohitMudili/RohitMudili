@@ -447,17 +447,20 @@ def update_info_svg(values):
     for key, raw in values.items():
         if key == 'LOC':
             total, added, deleted = raw
-            inner = (
-                f'{total:,}</tspan> '
+            # Replace the ENTIRE <text> element containing id="LOC" so previous
+            # multi-tspan injections from prior runs don't accumulate.
+            loc_tspans = (
+                f'<tspan fill="#616e7f">    </tspan>'
+                f'<tspan fill="#a5d6ff" id="LOC">{total:,}</tspan>'
+                f'<tspan fill="#616e7f"> (</tspan>'
                 f'<tspan fill="#3fb950">{added:,}++</tspan>'
                 f'<tspan fill="#616e7f">, </tspan>'
                 f'<tspan fill="#f85149">{deleted:,}--</tspan>'
-                f'<tspan fill="#a5d6ff">'  # reopen so the closing </tspan> in svg matches
+                f'<tspan fill="#616e7f">)</tspan>'
             )
-            # match: <tspan ... id="LOC">PENDING</tspan>
             new = re.sub(
-                rf'(<tspan [^>]*id="{key}"[^>]*>)[^<]*(</tspan>)',
-                lambda m: m.group(1) + inner + m.group(2),
+                r'(<text [^>]*>)[^<]*(?:<tspan[^>]*>[^<]*</tspan>)*?<tspan[^>]*id="LOC"[^>]*>[^<]*</tspan>(?:<tspan[^>]*>[^<]*</tspan>)*(</text>)',
+                lambda m: m.group(1) + loc_tspans + m.group(2),
                 new,
                 count=1,
             )
