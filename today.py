@@ -458,11 +458,15 @@ def update_info_svg(values):
                 f'<tspan fill="#f85149">{deleted:,}--</tspan>'
                 f'<tspan fill="#616e7f">)</tspan>'
             )
+            # Match the entire <text>...</text> containing id="LOC", regardless
+            # of how many tspans or stray whitespace are inside (handles corrupted
+            # state from previous buggy runs).
             new = re.sub(
-                r'(<text [^>]*>)[^<]*(?:<tspan[^>]*>[^<]*</tspan>)*?<tspan[^>]*id="LOC"[^>]*>[^<]*</tspan>(?:<tspan[^>]*>[^<]*</tspan>)*(</text>)',
-                lambda m: m.group(1) + loc_tspans + m.group(2),
+                r'<text [^>]*>(?:(?!</text>).)*?id="LOC"(?:(?!</text>).)*?</text>',
+                lambda m: re.match(r'<text [^>]*>', m.group(0)).group(0) + loc_tspans + '</text>',
                 new,
                 count=1,
+                flags=re.DOTALL,
             )
         else:
             new = re.sub(
