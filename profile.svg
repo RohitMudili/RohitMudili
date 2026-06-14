@@ -36,7 +36,7 @@
 <g font-size="17px" fill="#c9d1d9">
 <text x="660" y="80" xml:space="preserve"><tspan fill="#a5d6ff">rohit</tspan><tspan fill="#616e7f"> ----------------------------------------</tspan></text>
 <text x="660" y="102" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">OS</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">        Windows 11</tspan></text>
-<text x="660" y="124" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Uptime</tspan><tspan fill="#616e7f">:    </tspan><tspan fill="#a5d6ff" id="UPTIME">21 years, 10 months, 19 days</tspan></text>
+<text x="660" y="124" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Uptime</tspan><tspan fill="#616e7f">:    </tspan><tspan fill="#a5d6ff" id="UPTIME">21 years, 10 months, 20 days</tspan></text>
 <text x="660" y="146" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Role</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">      AI/ML Engineer</tspan></text>
 <text x="660" y="168" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Host</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">      Open Source Contributor</tspan></text>
 <text x="660" y="190" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">IDE</tspan><tspan fill="#616e7f">:</tspan><tspan fill="#a5d6ff">       VSCode 1.96.0</tspan></text>
@@ -55,9 +55,9 @@
 <text x="660" y="564" xml:space="preserve"><tspan fill="#616e7f">- GitHub Stats -------------------------------</tspan></text>
 <text x="660" y="586" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Repos</tspan><tspan fill="#616e7f">:     </tspan><tspan fill="#a5d6ff" id="REPOS">32</tspan><tspan fill="#616e7f"> {</tspan><tspan fill="#ffa657">Contributed</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff" id="CONTRIB">49</tspan><tspan fill="#616e7f">}</tspan></text>
 <text x="660" y="608" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Stars</tspan><tspan fill="#616e7f">:     </tspan><tspan fill="#a5d6ff" id="STARS">1</tspan></text>
-<text x="660" y="630" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Commits</tspan><tspan fill="#616e7f">:   </tspan><tspan fill="#a5d6ff" id="COMMITS">414</tspan></text>
+<text x="660" y="630" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Commits</tspan><tspan fill="#616e7f">:   </tspan><tspan fill="#a5d6ff" id="COMMITS">439</tspan></text>
 <text x="660" y="652" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Followers</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff" id="FOLLOWERS">7</tspan></text>
 <text x="660" y="674" xml:space="preserve"><tspan fill="#616e7f">. </tspan><tspan fill="#ffa657">Lines of Code on GitHub</tspan><tspan fill="#616e7f">:</tspan></text>
-<text x="660" y="696" xml:space="preserve"><tspan fill="#616e7f">    </tspan><tspan fill="#a5d6ff" id="LOC">934,361</tspan><tspan fill="#616e7f"> (</tspan><tspan fill="#3fb950">1,049,943++</tspan><tspan fill="#616e7f">, </tspan><tspan fill="#f85149">115,582--</tspan><tspan fill="#616e7f">)</tspan></text>
+<text x="660" y="696" xml:space="preserve"><tspan fill="#616e7f">    </tspan><tspan fill="#a5d6ff" id="LOC">961,074</tspan><tspan fill="#616e7f"> (</tspan><tspan fill="#3fb950">1,078,042++</tspan><tspan fill="#616e7f">, </tspan><tspan fill="#f85149">116,968--</tspan><tspan fill="#616e7f">)</tspan></text>
 </g>
 </svg>
